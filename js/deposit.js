@@ -10,18 +10,18 @@ document.getElementById('btn-submit').addEventListener('click', function () {
         return;
     }
 
-// total deposit calculation
+    // total deposit calculation
     const depositTotalElement = document.getElementById('deposit-total');
     const perviousDepositTotalString = depositTotalElement.innerText;
     const perviousDepositTotal = parseFloat(perviousDepositTotalString);
     const currentDepositTotal = perviousDepositTotal + newDepositAmount;
     depositTotalElement.innerText = currentDepositTotal;
 
-// total Balance Amount calculation
+    // total Balance Amount calculation
     const balanceTotalElement = document.getElementById('balance-total');
     const perviousBalanceTotalString = balanceTotalElement.innerText;
-    const perviousBalanceTotal = parseFloat( perviousBalanceTotalString );
-    const currentBalanceTotal  = perviousBalanceTotal +newDepositAmount;
+    const perviousBalanceTotal = parseFloat(perviousBalanceTotalString);
+    const currentBalanceTotal = perviousBalanceTotal + newDepositAmount;
     balanceTotalElement.innerText = currentBalanceTotal;
 
 })
